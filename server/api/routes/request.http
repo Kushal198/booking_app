@@ -1,0 +1,58 @@
+POST http://localhost:6000/api/hotels
+content-type: application/json
+
+{
+  "name":"Hotel Johny",
+  "type":"hotel",
+  "city":"berlin",
+  "address":"somewhere",
+  "distance":"500",
+  "title":"Best Hotel in the city",
+  "desc":"hotel desc",
+  "cheapestPrice":"100"
+}
+
+###
+
+PUT http://localhost:6000/api/hotels/627be613a6af706bcc607ccc
+content-type: application/json
+
+{
+  "name":"Newy Hotel"
+}
+
+###
+
+GET http://localhost:6000/api/hotels/627be613a6af706bcc607ccc
+content-type: application/json
+
+###
+
+DELETE http://localhost:6000/api/hotels/627be613a6af706bcc607ccc
+content-type: application/json
+
+###
+
+GET http://localhost:8000/api/hotels
+
+
+###
+POST http://localhost:6000/api/auth/register
+content-type: application/json
+
+{
+  "username":"john1",
+  "email":"john1@gmail.com",
+  "password":"12345"
+}
+
+###
+
+POST http://localhost:6000/api/auth/login
+content-type: application/json
+
+{
+  "username":"john1",
+  "password":"12345"
+}
+ 
